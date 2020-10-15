@@ -1,0 +1,22 @@
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>
+
+
+<div>
+  <p>Hello I am the Angular SPA and following a button should be shown and it should be blue: </p>
+  <pl-button label="hello"></pl-button>
+
+  <p>And this one should be pink: </p>
+  <pl-button label="Hello pink?" [pink]="true"></pl-button>
+</div>
+
+<!-- you only need this if you added a router: -->
+<router-outlet></router-outlet>

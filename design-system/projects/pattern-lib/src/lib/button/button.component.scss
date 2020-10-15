@@ -1,0 +1,25 @@
+button {
+  background: blue;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  appearance: none;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(55, 55, 55, 0.3),
+    0 6px 35px rgba(55, 55, 200, 0.7);
+  cursor: pointer;
+
+  &.make-pink {
+    background: #ff00a2;
+    box-shadow: 0 4px 10px rgba(55, 55, 55, 0.3), 0 6px 35px rgb(200 55 150 / 70%);
+  }
+}
+
+// .make-pink {
+//   background: #ff00a2;
+//   box-shadow: 0 4px 10px rgba(55, 55, 55, 0.3), 0 6px 35px rgb(200 55 150 / 70%);
+// }
