@@ -1,23 +1,44 @@
+@import '../../styles/utils'; // TODO: create an alias to avoid '../' paths
+
+:host { 
+  display: inline-block;
+}
+
 button {
-  background: blue;
+  background: $primary-col;
   padding: 1rem 2rem;
-  border-radius: 3px;
+  border-radius: $button-radius;
   appearance: none;
   border: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   font-size: 1.5rem;
   letter-spacing: 1px;
-  color: white;
-  box-shadow: 0 4px 10px rgba(55, 55, 55, 0.3),
-    0 6px 35px rgba(55, 55, 200, 0.7);
+  color: $primary-col-text;
+  box-shadow: $pl-button-shadow;
   cursor: pointer;
 
   &.make-pink {
     background: #ff00a2;
-    box-shadow: 0 4px 10px rgba(55, 55, 55, 0.3), 0 6px 35px rgb(200 55 150 / 70%);
+    box-shadow: $pl-button-shadow-alt;
+  }
+
+  &.rm-right-borders {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &.rm-left-borders {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &.no-shadow {
+    box-shadow: none;
   }
 }
+
+
 
 // .make-pink {
 //   background: #ff00a2;

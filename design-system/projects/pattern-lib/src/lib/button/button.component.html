@@ -1,3 +1,5 @@
-<button [attr.is-pink]="pink" [ngClass]="{'make-pink': pink}">
-    {{label ? "😎 " + label : "No Label provided 🧐"}}
+<button 
+    [attr.is-pink]="pink" 
+    [ngClass]="{'make-pink': pink, 'rm-left-borders': !bordersLeft, 'rm-right-borders': !bordersRight, 'no-shadow': noShadow}">
+    {{label ? label : "No Label provided 🧐"}}
 </button>
