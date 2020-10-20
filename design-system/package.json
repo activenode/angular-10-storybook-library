@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && npm run copy-assets",
+    "build:prod": "ng build --prod && npm run copy-assets",
     "test": "ng test",
     "lint": "ng lint",
+    "copy-assets": "cp -R ./projects/pattern-lib/src/styles dist/pattern-lib/",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook"
